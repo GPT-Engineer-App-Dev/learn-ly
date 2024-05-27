@@ -2,6 +2,7 @@ import { Box, Button, Container, Flex, Heading, HStack, Image, Stack, Text, VSta
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import CodeEditor from '../components/CodeEditor';
 
 const Index = () => {
   const [enrolledCourses, setEnrolledCourses] = useState([]);
@@ -82,6 +83,12 @@ const Index = () => {
             </Box>
           </Box>
         </Flex>
+      </Container>
+
+      {/* Code Editor Section */}
+      <Container maxW="container.xl" py={20}>
+        <Heading as="h3" size="xl" mb={10} textAlign="center">Code Editor</Heading>
+        <CodeEditor />
       </Container>
 
       {/* Footer */}
